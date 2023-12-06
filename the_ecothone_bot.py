@@ -11,7 +11,7 @@ bot = telebot.TeleBot(BOT_TOCKEN)
 
 @bot.message_handler(commands=["start", "hello"])
 def send_welcome(message):
-    bot.reply_to(message, "SHut up i m working")
+    bot.reply_to(message, "hello creator")
 
 @bot.message_handler(func= lambda  msg : True )
 def echo(message):
